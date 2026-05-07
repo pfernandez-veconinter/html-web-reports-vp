@@ -1,0 +1,58 @@
+:root {
+  --app-bg: radial-gradient(circle at 15% 15%, #eaf2ff 0%, #f8fbff 40%, #fff8ef 100%);
+  --card-radius: 1rem;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--app-bg);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+  border-radius: var(--card-radius);
+}
+
+.sticky-menu {
+  position: sticky;
+  top: 1rem;
+}
+
+.country-btn {
+  font-weight: 600;
+}
+
+.country-btn.btn-primary {
+  box-shadow: 0 6px 20px rgba(13, 110, 253, 0.25);
+}
+
+.key-label {
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #6c757d;
+  margin-bottom: 0.2rem;
+}
+
+.value-text {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #212529;
+  word-break: break-word;
+}
+
+.json-box {
+  max-height: 400px;
+  overflow: auto;
+  white-space: pre-wrap;
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 0.75rem;
+  padding: 1rem;
+}
+
+@media (max-width: 991px) {
+  .sticky-menu {
+    position: static;
+  }
+}
